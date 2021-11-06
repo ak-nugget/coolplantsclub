@@ -1,2 +1,4 @@
 # coolplantsclub
- App to (kind of better) manage your plants
+ PWA to (kind of better) manage your plants
+
+ Build with NuxtJS

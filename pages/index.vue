@@ -2,6 +2,15 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <h1>Meine Pflanzen</h1>
+      <v-btn
+        tile
+        to="/new"
+        outlined
+        large
+        color="$dgreen"
+      >
+        Pflanze hinzufügen
+      </v-btn>
       <v-spacer />
       <v-card
         v-for="(item,index) in items"
@@ -24,7 +33,6 @@
           <p>{{item.scientificName}}</p>
         </v-card-text>
       </v-card>
-      
     </v-col>
   </v-row>
 </template>
@@ -48,12 +56,7 @@ export default {
 
 <style lang="scss" scoped>
   @import '~assets/css/main.scss';
-  h1 {
-    font-family: 'Barlow', sans-serif !important;
-    text-transform: uppercase;
-    margin-bottom: 1.5rem !important;
-    color: #224026;
-  }
+  
   .v-card {
     margin-bottom: 1rem;
     border: 2px solid #224026;

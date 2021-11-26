@@ -24,13 +24,13 @@
           :lazy-src="item.image"
           max-height="150"
           max-width="100%"
-          :src="item.image"
+          :src="'monstera.jpg'"
         ></v-img>
         <v-card-title class="headline">
-          {{item.name}}
+          Variegata
         </v-card-title>
         <v-card-text class="subtitle">
-          <p>{{item.scientificName}}</p>
+          <p>Monstera deliciosa</p>
         </v-card-text>
       </v-card>
     </v-col>

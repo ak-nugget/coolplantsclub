@@ -13,15 +13,12 @@
       </v-btn>
       <v-spacer />
       <v-card
-        v-for="(item,index) in items"
-        :key="index"
         class="rounded-0"
         outlined
         nuxt
-        :to="'/plant?id='+index"
         >
         <v-img
-          :lazy-src="item.image"
+          :lazy-src="'monstera.jpg'"
           max-height="150"
           max-width="100%"
           :src="'monstera.jpg'"

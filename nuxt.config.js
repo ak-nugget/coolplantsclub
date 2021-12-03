@@ -59,7 +59,7 @@ export default {
       lang: 'en'
     },
     icon: {
-      href: '/favicon.ico'
+      href: '/icon.png'
     },
   },
 

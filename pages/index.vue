@@ -24,7 +24,7 @@
           :src="'monstera.jpg'"
         ></v-img>
         <v-card-title class="headline">
-          Variegata
+          Mo. Variegata
         </v-card-title>
         <v-card-text class="subtitle">
           <p>Monstera deliciosa</p>

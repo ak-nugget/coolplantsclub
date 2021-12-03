@@ -59,7 +59,7 @@ export default {
       lang: 'en'
     },
     icon: {
-      href: '/icon.png'
+      href: '/cpcicon.png'
     },
   },
 

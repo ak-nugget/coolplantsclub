@@ -57,7 +57,10 @@ export default {
   pwa: {
     manifest: {
       lang: 'en'
-    }
+    },
+    icon: {
+      href: '/favicon.ico'
+    },
   },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

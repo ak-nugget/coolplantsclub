@@ -1,11 +1,11 @@
-# coolplantsclub
+# Cool Plants Club
  PWA to (kind of better) manage your plants
 
  Build with NuxtJS
 
  I have no clue what I'm doing
 
-# coolplantsclub
+# Cool Plants Club
 
 ## Build Setup
 

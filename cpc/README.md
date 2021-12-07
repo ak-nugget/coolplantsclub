@@ -1,4 +1,4 @@
-# coolplantsclub
+# Cool Plants Club
 
 ## Build Setup
 

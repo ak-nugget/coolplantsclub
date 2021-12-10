@@ -21,7 +21,7 @@ export default {
   css: [
     // SCSS file in the project
     '@/assets/css/main.scss',
-    '@fortawesome/fontawesome-svg-core/styles.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -85,7 +85,7 @@ export default {
             }
         }
     },
-    optionsPath: '~/plugins/vuetify.options.js'
+    optionsPath: '~/plugins/fontawesome.options.js'
 },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

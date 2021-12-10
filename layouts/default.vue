@@ -24,7 +24,7 @@
           to="/dashboard"
           >
           <v-list-item-icon>
-            <font-awesome-icon :icon="['fal', 'user']" />
+            <font-awesome-icon :icon="['fal', 'leaf']" />
           </v-list-item-icon>
           <v-list-item-content>
             Meine Pflanzen
@@ -36,7 +36,7 @@
           to="/new"
           >
           <v-list-item-icon>
-            <font-awesome-icon :icon="['fal', 'leaf']" />
+            <font-awesome-icon :icon="['fal', 'user']" />
           </v-list-item-icon>
           <v-list-item-content>
             Einstellungen

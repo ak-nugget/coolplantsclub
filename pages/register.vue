@@ -91,7 +91,7 @@
       
       <v-btn
         to="/"
-        plain
+        depressed
         medium
         color="$dgreen"
       >

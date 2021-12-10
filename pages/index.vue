@@ -50,7 +50,7 @@
       <v-btn
         
         to="/register"
-        plain
+        depressed
         medium
         color="$dgreen"
       >

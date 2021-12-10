@@ -89,7 +89,8 @@
 }
 
 .v-list-item__icon {
-    margin-right: 1rem !important;
+    margin-right: 0.5rem !important;
+    margin-left: 0.5rem !important;
     display: block;
     text-align: center;
 }
@@ -136,3 +137,8 @@
 .svg-inline--fa {
     margin: 0 auto !important;
 } */
+
+.link {
+    cursor: pointer;
+    text-decoration: underline;
+}

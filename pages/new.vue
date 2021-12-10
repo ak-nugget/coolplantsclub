@@ -8,12 +8,11 @@
       <v-file-input
         accept="image/png, image/jpeg, image/jpg"
         multiple
-        prepend-icon="$vuetify.icons.photo"
         outlined
         placeholder="Die schönsten Bilder deiner Pflanze"
         color="#5c7358"
-        counter=5
-      ></v-file-input>
+      >
+      </v-file-input>
       <v-text-field
         label="Name"
         :rules="rules"
@@ -72,9 +71,11 @@
       <p class="subtitle">Möchtest du an die Pflege erinnert werden?</p>
           <v-checkbox
             label="Gießen"
+            color="#5c7358"
             ></v-checkbox>
           <v-checkbox
             label="Düngen"
+            color="#5c7358"
             class="fertcheck"
             ></v-checkbox>
         
@@ -97,16 +98,16 @@
       ></v-select>
       <v-menu
         ref="menu"
-        v-model="menu"
+
         :close-on-content-click="false"
-        :return-value.sync="date"
+        
         transition="scale-transition"
         offset-y
         min-width="auto"
       >
-      <template v-slot:activator="{ on, attrs }">
+      <template #activator="{ on, attrs }">
           <v-text-field
-            v-model="date"
+            
             label="Gekauft am"
             class="boughtpicker"
             prepend-icon="mdi-calendar"
@@ -117,7 +118,7 @@
           ></v-text-field>
         </template>
         <v-date-picker
-          v-model="date"
+          
           no-title
           scrollable
           
@@ -129,14 +130,12 @@
           <v-btn
             text
             color="#5c7358"
-            @click="menu = false"
           >
             Abbrechen
           </v-btn>
           <v-btn
             text
             color="#5c7358"
-            @click="$refs.menu.save(date)"
           >
             OK
           </v-btn>
@@ -164,11 +163,7 @@
 
 <script>
 export default {
-  asyncData({query}) {
-    const index = query.id
-
-    return {index}
-  },
+  
 
   data: () => ({
     interval: ['Tag', 'Woche', 'Monat', 'Jahr'],
@@ -178,16 +173,6 @@ export default {
       value => (value && value.lenght >= 1)
     ]
   }),
-
-  async mounted() {
-    const item = await this.$content('items').fetch().then(res => {
-      return res.items[parseInt(this.index)]
-    })
-
-    this.item = Object.assign({}, item)
-
-    // console.log(item)
-  },
 }
 </script>
 

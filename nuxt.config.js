@@ -21,10 +21,12 @@ export default {
   css: [
     // SCSS file in the project
     '@/assets/css/main.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~plugins/fontawesome.js'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -46,6 +48,11 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
+    '@nuxtjs/auth-next'
+  ],
+
+  auth: [
+    // options
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

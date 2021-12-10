@@ -8,21 +8,63 @@
       app
     >
       <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
+        <v-list-item>
           <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
+            <v-img
+              :lazy-src="'cpc_logo.svg'"
+              max-height="80"
+              max-width="100"
+              :src="'cpc_logo.svg'"
+            ></v-img>
+          </v-list-item-content>
+        </v-list-item>
+        <v-spacer />
+        <v-list-item
+          color="#224026"
+          to="/dashboard"
+          >
+          <v-list-item-icon>
+            <font-awesome-icon :icon="['fal', 'user']" />
+          </v-list-item-icon>
+          <v-list-item-content>
+            Meine Pflanzen
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          color="#224026"
+          to="/new"
+          >
+          <v-list-item-icon>
+            <font-awesome-icon :icon="['fal', 'leaf']" />
+          </v-list-item-icon>
+          <v-list-item-content>
+            Einstellungen
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          color="#224026"
+          to="/"
+          >
+          <v-list-item-icon>
+            <font-awesome-icon :icon="['fal', 'power-off']" />
+          </v-list-item-icon>
+          <v-list-item-content>
+            Logout
           </v-list-item-content>
         </v-list-item>
       </v-list>
+      <!-- <v-list v-else>
+        <v-list-item
+          to="/">
+          Login
+        </v-list-item>
+        <v-list-item
+          to="/register">
+          Registrieren
+        </v-list-item>
+      </v-list> -->
     </v-navigation-drawer>
     <v-app-bar
       :clipped-right="clipped"
@@ -63,29 +105,13 @@ export default {
   data () {
     return {
       clipped: false,
-      drawer: false,
-      fixed: false,
-      items: [
-        {
-          icon: '$vuetify.icons.all',
-          title: 'Meine Pflanzen',
-          to: '/'
-        },
-        /* {
-          icon: '$vuetify.icons.add',
-          title: 'Pflanze hinzufügen',
-          to: '/new'
-        }, */
-        {
-          icon: '$vuetify.icons.settings',
-          title: 'Einstellungen',
-          to: '/settings'
-        }
-      ],
+      drawer: true,
+      fixed: true,
+      
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Plarent'
+      title: 'Cool Plants Club'
     }
   }
 }

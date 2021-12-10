@@ -39,6 +39,7 @@
       </v-text-field>
 
       <v-btn
+        to="/dashboard"
         tile
         outlined
         large

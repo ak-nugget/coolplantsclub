@@ -49,8 +49,8 @@
       </v-btn>
       <v-spacer />
       <v-btn
-        
         to="/register"
+        tile
         depressed
         medium
         color="$dgreen"
@@ -89,7 +89,7 @@ export default {
   
   .v-btn--icon.v-size--default {
     font-size: 1.25rem;
-    margin-top: -6px;
+    margin-top: -7px;
   }
 
   .v-card {

@@ -142,3 +142,8 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.v-btn__content svg {
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+}

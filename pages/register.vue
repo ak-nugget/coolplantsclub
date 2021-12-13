@@ -140,6 +140,10 @@ export default {
     margin-top: -7px;
   }
 
+  .v-btn__content {
+    max-width: 1.5rem;
+  }
+
   .v-card {
     margin-bottom: 1rem;
     border: 2px solid #224026;

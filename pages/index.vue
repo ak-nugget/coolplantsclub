@@ -33,7 +33,7 @@
             icon
             @click="show1 = !show1"
           >
-            <FontAwesomeIcon :icon="show1 ? ['fal', 'eye'] : ['fal', 'eye-slash']" />
+            <FontAwesomeIcon :icon="show1 ? ['fal', 'eye'] : ['fal', 'eye-slash']" width="1.5rem" />
           </v-btn>
         </template>
       </v-text-field>

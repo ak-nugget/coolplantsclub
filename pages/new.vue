@@ -15,7 +15,7 @@
       </v-file-input>
       <v-text-field
         label="Name"
-        :rules="rules"
+        :rules="[rules.required, rules.length]"
         outlined
         color="#5c7358"
       ></v-text-field>
@@ -168,10 +168,10 @@ export default {
   data: () => ({
     interval: ['Tag', 'Woche', 'Monat', 'Jahr'],
     location: ['Sonnig', 'Halb-schattig', 'Schattig', 'Garten', 'Wintergarten', 'Draußen'],
-    rules: [
-      value => !!value || 'Erforderlich',
-      value => (value && value.lenght >= 1)
-    ]
+    rules: {
+      required: value => !!value || 'Erforderlich',
+      length: value => (value && value.lenght >= 1)
+    }
   }),
 }
 </script>

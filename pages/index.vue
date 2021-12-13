@@ -13,6 +13,7 @@
       <v-spacer />
       <v-text-field
         label="E-Mail-Adresse"
+        class="rounded-0"
         outlined
         color="#5c7358"
       ></v-text-field>
@@ -22,7 +23,7 @@
         :type="show1 ? 'text' : 'password'"
         name="input-10-2"
         label="Passwort"
-        class="input-group--focused"
+        class="input-group--focused rounded-0"
         outlined
         color="#5c7358"
         

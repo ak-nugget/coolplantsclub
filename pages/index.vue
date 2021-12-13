@@ -14,7 +14,6 @@
       <v-text-field
         label="E-Mail-Adresse"
         outlined
-        rounded-0
         color="#5c7358"
       ></v-text-field>
 
@@ -25,7 +24,6 @@
         label="Passwort"
         class="input-group--focused"
         outlined
-        rounded-0
         color="#5c7358"
         
       >

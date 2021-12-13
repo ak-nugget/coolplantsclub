@@ -33,7 +33,9 @@
             icon
             @click="show1 = !show1"
           >
-            <FontAwesomeIcon :icon="show1 ? ['fal', 'eye'] : ['fal', 'eye-slash']" width="1.5rem" />
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="show1 ? ['fal', 'eye'] : ['fal', 'eye-slash']" />
           </v-btn>
         </template>
       </v-text-field>
@@ -94,6 +96,10 @@ export default {
 
   .v-btn__content {
     max-width: 1.5rem;
+  }
+
+  .input-icon {
+    width: 1.5rem;
   }
 
   .v-card {

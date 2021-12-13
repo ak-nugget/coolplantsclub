@@ -24,7 +24,9 @@
           to="/dashboard"
           >
           <v-list-item-icon>
-            <font-awesome-icon :icon="['fal', 'leaf']" width='1.5rem' />
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="['fal', 'leaf']" />
           </v-list-item-icon>
           <v-list-item-content>
             Meine Pflanzen
@@ -36,7 +38,9 @@
           to="/new"
           >
           <v-list-item-icon>
-            <font-awesome-icon :icon="['fal', 'user']" width='1.5rem' />
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="['fal', 'user']" />
           </v-list-item-icon>
           <v-list-item-content>
             Einstellungen
@@ -48,7 +52,9 @@
           to="/"
           >
           <v-list-item-icon>
-            <font-awesome-icon :icon="['fal', 'power-off']" width='1.5rem' />
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="['fal', 'power-off']" />
           </v-list-item-icon>
           <v-list-item-content>
             Logout

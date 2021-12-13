@@ -73,7 +73,10 @@
             icon
             @click="show2 = !show2"
           >
-            <FontAwesomeIcon :icon="show2 ? ['fal', 'eye'] : ['fal', 'eye-slash']" width="1.5rem" />
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="show2 ? ['fal', 'eye'] : ['fal', 'eye-slash']" 
+              />
           </v-btn>
         </template>
       </v-text-field>
@@ -142,6 +145,10 @@ export default {
 
   .v-btn__content {
     max-width: 1.5rem;
+  }
+  
+  .input-icon {
+    width: 1.5rem;
   }
 
   .v-card {

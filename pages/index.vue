@@ -88,14 +88,14 @@ export default {
   }
   
   .v-btn--icon.v-size--default {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
     margin-top: -7px;
   }
 
   .v-btn__content {
     max-width: 1.5rem;
   }
-  
+
   .v-card {
     margin-bottom: 1rem;
     border: 2px solid #224026;

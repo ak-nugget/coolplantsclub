@@ -136,7 +136,7 @@ export default {
   }
 
   .v-btn--icon.v-size--default {
-    font-size: 1.25rem;
+    font-size: 1.25rem !important;
     margin-top: -7px;
   }
 

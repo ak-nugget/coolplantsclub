@@ -4,7 +4,7 @@
       
       <v-img
         :lazy-src="'cpc_logo.svg'"
-        height="120"
+        width="150"
         aspect-ratio="5/4"
         to="cpc.wsrn.dev"
         :src="'cpc_logo.svg'"

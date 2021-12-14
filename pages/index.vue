@@ -3,7 +3,7 @@
     <v-col cols="12" sm="8" md="6">  
       <v-img
         :lazy-src="'cpc_logo.svg'"
-        height="120"
+        width="150"
         aspect-ratio="5/4"
         :src="'cpc_logo.svg'"
       ></v-img>

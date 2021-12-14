@@ -13,6 +13,7 @@
             <v-img
               :lazy-src="'cpc_logo.svg'"
               width="100"
+              max-width="100"
               aspect-ratio="1.25"
               :src="'cpc_logo.svg'"
             ></v-img>

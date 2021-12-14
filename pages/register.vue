@@ -4,8 +4,8 @@
       
       <v-img
         :lazy-src="'cpc_logo.svg'"
-        max-height="120"
-        max-width="150"
+        height="120"
+        aspect-ratio="5/4"
         to="cpc.wsrn.dev"
         :src="'cpc_logo.svg'"
       ><a href="https://cpc.wsrn.dev"></a></v-img>
@@ -146,7 +146,7 @@ export default {
   .v-btn__content {
     max-width: 1.5rem;
   }
-  
+
   .input-icon {
     width: 1.5rem;
   }

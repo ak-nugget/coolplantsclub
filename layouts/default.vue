@@ -12,8 +12,8 @@
           <v-list-item-content>
             <v-img
               :lazy-src="'cpc_logo.svg'"
-              height="80"
-              
+              width="100"
+              aspect-ratio="5/4"
               :src="'cpc_logo.svg'"
             ></v-img>
           </v-list-item-content>

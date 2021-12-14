@@ -3,8 +3,8 @@
     <v-col cols="12" sm="8" md="6">  
       <v-img
         :lazy-src="'cpc_logo.svg'"
-        max-height="120"
-        max-width="150"
+        height="120"
+        aspect-ratio="5/4"
         :src="'cpc_logo.svg'"
       ></v-img>
       <v-spacer />

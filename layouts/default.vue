@@ -12,8 +12,8 @@
           <v-list-item-content>
             <v-img
               :lazy-src="'cpc_logo.svg'"
-              max-height="80"
-              max-width="100"
+              height="80"
+              
               :src="'cpc_logo.svg'"
             ></v-img>
           </v-list-item-content>

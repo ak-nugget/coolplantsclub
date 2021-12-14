@@ -20,7 +20,7 @@
       <v-spacer />
       
       <v-text-field
-        
+        class="rounded-0"
         label="E-Mail-Adresse"
         :rules="[rules.required, rules.email]"
         outlined
@@ -28,6 +28,7 @@
       ></v-text-field>
 
       <v-text-field
+        class="rounded-0"
         label="Name"
         :rules="[rules.required]"
         outlined
@@ -38,9 +39,10 @@
         v-model="password"
         :rules="[rules.required, rules.min]"
         :type="show1 ? 'text' : 'password'"
+        
         name="input-10-2"
         label="Passwort"
-        class="input-group--focused"
+        class="input-group--focused rounded-0"
         outlined
         color="#5c7358"
         
@@ -62,7 +64,7 @@
         :type="show2 ? 'text' : 'password'"
         name="input-10-2"
         label="Passwort bestätigen"
-        class="input-group--focused"
+        class="input-group--focused rounded-0"
         outlined
         color="#5c7358"
         @click:append="show2 = !show2"

@@ -28,8 +28,8 @@
     <!-- PFLEGE -->
     <v-col 
       sm="12"
-      md="6"
-      lg="6"
+      md="3"
+      lg="3"
       >
       <h2 class="smallhead">
         Pflege
@@ -69,8 +69,8 @@
     <!-- INFORMATIONEN -->
     <v-col
       sm="12"
-      md="6"
-      lg="6"
+      md="3"
+      lg="3"
       >
       <h2 class="smallhead">
         Informationen

@@ -170,7 +170,7 @@ export default {
     location: ['Sonnig', 'Halb-schattig', 'Schattig', 'Garten', 'Wintergarten', 'Draußen'],
     rules: {
       required: value => !!value || 'Erforderlich',
-      length: value => (value && value.lenght >= 1)
+      length: value => (value && value.lenght >= 1),
     }
   }),
 }

@@ -1,5 +1,5 @@
 <template>
-  <v-row v-if="Object.keys(item).length !== 0 && !editPlant">
+  <v-row>
     <v-col
       cols="12"
       sm="6"
@@ -16,22 +16,25 @@
       cols="12"
       sm="6"
     >
-      <v-spacer />
+      <v-col 
+      
+      cols="12"
+      sm="6"
+      
+      >
       <h1 class="headline">
         Monstera 1
       </h1>
-      <p v-if="item.scientificName.length > 0" class="subtitle">
-        Monstera deliciosa
+      <p class="subtitle">
+        Monstera deliciosa (ugs. Fensterblatt)
       </p>
-      <p v-if="item.slang.length > 0" class="subtitle">
-        (ugs. Fensterblatt)
-      </p>
-    
+      </v-col>
       <!-- PFLEGE -->
       <v-col 
-      v-if="item.watering.amount !== empty || item.fertilize !== empty"
+      
       cols="12"
       sm="6"
+      
       >
         <h2 class="smallhead">
           Pflege
@@ -39,7 +42,7 @@
         <v-list
           disabled>
           <v-list-item-group>
-            <v-list-item v-if="item.watering.amount !== empty">
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'faucet-drip']" width="16px" color="$dgreen" />
               </v-list-item-icon>
@@ -47,7 +50,7 @@
                 1x pro Woche gießen
               </v-list-item-content>
             </v-list-item>
-            <v-list-item v-if="item.fertilize !== 0">
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'tint']" height="16px" color="$dgreen" />
               </v-list-item-icon>
@@ -55,31 +58,8 @@
                 Alle 4 Wochen düngen
               </v-list-item-content>
             </v-list-item>
-            <v-list-item v-if="item.watrem === false && item.ferrem === false">
-              <v-list-item-icon>
-                <font-awesome-icon :icon="['fal', 'bell-slash']" width="20px" color="$dgreen" />
-              </v-list-item-icon>
-              <v-list-item-content>
-                Keine Erinnerungen eingestellt
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item v-else-if="item.watrem === true && item.ferrem === false">
-              <v-list-item-icon>
-                <font-awesome-icon :icon="['fal', 'bell-on']" width="20px" color="$dgreen" />
-              </v-list-item-icon>
-              <v-list-item-content>
-                Erinnerungen ans Gießen
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item v-else-if="item.watrem === false && item.ferrem === true">
-              <v-list-item-icon>
-                <font-awesome-icon :icon="['fal', 'bell-on']" width="20px" color="$dgreen" />
-              </v-list-item-icon>
-              <v-list-item-content>
-                Erinnerungen ans Düngen
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item v-else>
+            
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'bell-on']" width="20px" color="$dgreen" />
               </v-list-item-icon>
@@ -93,7 +73,7 @@
       
       <!-- INFORMATIONEN -->
       <v-col
-      v-if="item.substrate !== empty || item.place !== empty || item.bought !== empty || item.personalNote !== empty || item.growth[0].height !== ''"
+      
       cols="12"
       sm="6">
         <h2 class="smallhead">
@@ -102,7 +82,7 @@
         <v-list
           disabled>
           <v-list-item-group>
-            <v-list-item v-if="item.substrate !== empty">
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'glass-whiskey']" width="16px" color="$dgreen" />
               </v-list-item-icon>
@@ -110,7 +90,7 @@
                 Kokosfaser
               </v-list-item-content>
             </v-list-item>
-            <v-list-item v-if="item.place !== empty">
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'sun-cloud']" width="20px" color="$dgreen" />
               </v-list-item-icon>
@@ -118,7 +98,7 @@
                 Halbschattig
               </v-list-item-content>
             </v-list-item>
-            <v-list-item v-if="item.bought !== empty">
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'history']" height="16px" color="$dgreen" />
               </v-list-item-icon>
@@ -126,7 +106,7 @@
                 Am 12. Februar 2020 gekauft
               </v-list-item-content>
             </v-list-item>
-            <v-list-item v-if="item.personalNote !== empty">
+            <v-list-item >
               <v-list-item-icon>
                 <font-awesome-icon :icon="['fal', 'sticky-note']" width="14px" color="$dgreen" />
               </v-list-item-icon>
@@ -137,14 +117,13 @@
             </v-list-item>
           </v-list-item-group>
         </v-list>
-        <template v-if="item.growth[0].height !== ''">
+        <template >
           <v-expansion-panels
             
             accordion
             >
             <v-expansion-panel
-              v-for="(growth,i) in 1"
-              :key="i"
+              
               >
               <v-expansion-panel-header>
                 
@@ -165,7 +144,7 @@
                   disable-sort
                   item-key="height"
                   hide-default-footer
-                  :items="item.growth"
+                  
                   :headers="[{ text: 'Größe', value: 'height' }, { text: 'Datum', value: 'date' }]"
                   class="elevation-1">
                   <!-- <template v-slot:item.height="{ height }">

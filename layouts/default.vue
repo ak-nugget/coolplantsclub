@@ -62,16 +62,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-      <!-- <v-list v-else>
-        <v-list-item
-          to="/">
-          Login
-        </v-list-item>
-        <v-list-item
-          to="/register">
-          Registrieren
-        </v-list-item>
-      </v-list> -->
+      
     </v-navigation-drawer>
     <v-app-bar
       :clipped-right="clipped"
@@ -90,14 +81,7 @@
         <Nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      
-    </v-navigation-drawer>
+    
     <v-footer
       :absolute="!fixed"
       app

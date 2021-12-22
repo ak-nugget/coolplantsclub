@@ -1,21 +1,40 @@
 <template>
-  <v-row justify="center" align="center">
-    <v-col cols="12" sm="8" md="6">
+  <v-row align="center" class="row-cols-3">
+    <v-col cols="12">
       <h1>Meine Pflanzen</h1>
-      <v-btn
-        tile
-        to="/new"
-        outlined
-        large
-        color="$dgreen"
-      >
-        Pflanze hinzufügen
-      </v-btn>
-      <v-spacer />
+      <v-row
+      justify="space-between">
+        <v-col>
+          <v-btn
+            tile
+            to="/new"
+            outlined
+            large
+            color="$dgreen"
+          >
+            Pflanze hinzufügen
+          </v-btn>
+        </v-col>
+        
+        <v-col>
+          <v-select
+            class="sort"
+            :items="items"
+            align-self="end"
+            label="Sortierung"
+            color="#5c7358"
+            width="200"
+          ></v-select>
+        </v-col>
+      </v-row>
+    </v-col>
+    <v-spacer />
+    <v-col sm="6" md="4" lg="4">
       <v-card
         class="rounded-0"
         outlined
         nuxt
+        to="/planttest"
         >
         <v-img
           :lazy-src="'monstera.jpg'"
@@ -31,16 +50,54 @@
         </v-card-text>
       </v-card>
     </v-col>
+    <v-col sm="6" md="4" lg="4">
+      <v-card
+        class="rounded-0"
+        outlined
+        nuxt
+        >
+        <v-img
+          :lazy-src="'monstera.jpg'"
+          max-height="150"
+          max-width="100%"
+          :src="'monstera.jpg'"
+        ></v-img>
+        <v-card-title class="headline">
+          2. Pflanze
+        </v-card-title>
+        <v-card-text class="subtitle">
+          <p>Philodendron verrucosum</p>
+        </v-card-text>
+      </v-card>
+    </v-col>
+    <v-col sm="6" md="4" lg="4">
+      <v-card
+        class="rounded-0"
+        outlined
+        nuxt
+        >
+        <v-img
+          :lazy-src="'monstera.jpg'"
+          max-height="150"
+          max-width="100%"
+          :src="'monstera.jpg'"
+        ></v-img>
+        <v-card-title class="headline">
+          3. Pflanze
+        </v-card-title>
+        <v-card-text class="subtitle">
+          <p>Philodendron verrucosum</p>
+        </v-card-text>
+      </v-card>
+    </v-col>
   </v-row>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      items: []
-    }
-  },
+  data: () => ({
+      items: ['Alphabetisch', 'Kaufdatum'],
+    }),
 }
 </script>
 
@@ -51,5 +108,11 @@ export default {
   .v-card {
     margin-bottom: 1rem;
     border: 2px solid #224026;
+  }
+
+  .sort {
+    max-width: 220px;
+    padding-top: 8px;
+    margin-left: auto;
   }
 </style>

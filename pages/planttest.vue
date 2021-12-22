@@ -3,6 +3,7 @@
     <v-col
       sm="12"
       md="6"
+      lg="6"
      >
       <v-img
         :lazy-src="'monstera.jpg'"
@@ -15,6 +16,7 @@
     <v-col 
       sm="12"
       md="6"
+      lg="6"
       >
       <h1 class="headline">
         Monstera 1
@@ -27,6 +29,7 @@
     <v-col 
       sm="12"
       md="6"
+      lg="6"
       >
       <h2 class="smallhead">
         Pflege
@@ -65,9 +68,10 @@
     
     <!-- INFORMATIONEN -->
     <v-col
-    
-    cols="12"
-    sm="6">
+      sm="12"
+      md="6"
+      lg="6"
+      >
       <h2 class="smallhead">
         Informationen
       </h2>

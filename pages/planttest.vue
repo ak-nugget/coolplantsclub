@@ -28,8 +28,9 @@
       <!-- PFLEGE -->
       <v-col 
         sm="12"
-        md="3"
-        lg="3"
+        md="6"
+        lg="6"
+        class="no-pad"
         >
         <h2 class="smallhead">
           Pflege
@@ -69,8 +70,9 @@
       <!-- INFORMATIONEN -->
       <v-col
         sm="12"
-        md="3"
-        lg="3"
+        md="6"
+        lg="6"
+        class="no-pad"
         >
         <h2 class="smallhead">
           Informationen
@@ -191,4 +193,8 @@
 
 <style lang="scss" scoped>
   @import '~assets/css/main.scss';
+
+  .no-pad {
+    padding: 0;
+  }
 </style>

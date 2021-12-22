@@ -1,8 +1,8 @@
 <template>
   <v-row>
     <v-col
-      cols="12"
-      sm="6"
+      sm="12"
+      md=""
      >
       <v-img
         :lazy-src="'monstera.jpg'"
@@ -11,15 +11,11 @@
         :src="'monstera.jpg'"
         :alt="'monstera.jpg'"
       ></v-img>
-    </v-col>
-    <v-col
-      cols="12"
-      sm="6"
-    >
+
       <v-col 
       
       cols="12"
-      sm="6"
+      sm="12"
       
       >
       <h1 class="headline">

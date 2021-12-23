@@ -33,7 +33,32 @@
             Meine Pflanzen
           </v-list-item-content>
         </v-list-item>
-
+        <v-list-item
+          color="#224026"
+          to="/"
+          >
+          <v-list-item-icon>
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="['fal', 'book-bookmark']" />
+          </v-list-item-icon>
+          <v-list-item-content>
+            Verzeichnis
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          color="#224026"
+          to="/"
+          >
+          <v-list-item-icon>
+            <FontAwesomeIcon 
+              class="input-icon"
+              :icon="['fal', 'list-check']" />
+          </v-list-item-icon>
+          <v-list-item-content>
+            Wunschliste
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item
           color="#224026"
           to="/new"

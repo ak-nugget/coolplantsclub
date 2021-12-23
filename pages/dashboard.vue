@@ -1,5 +1,5 @@
 <template>
-  <v-row align="center" class="row-cols-3">
+  <v-row align="center">
     <v-col cols="12">
       <h1>Meine Pflanzen</h1>
       <v-row
@@ -38,8 +38,9 @@
         >
         <v-img
           :lazy-src="'monstera.jpg'"
-          max-height="150"
+
           max-width="100%"
+          aspect-ratio="2"
           :src="'monstera.jpg'"
         ></v-img>
         <v-card-title class="headline">
@@ -57,10 +58,11 @@
         nuxt
         >
         <v-img
-          :lazy-src="'monstera.jpg'"
-          max-height="150"
+          :lazy-src="'philo.jpg'"
+
           max-width="100%"
-          :src="'monstera.jpg'"
+          aspect-ratio="2"
+          :src="'philo.jpg'"
         ></v-img>
         <v-card-title class="headline">
           2. Pflanze
@@ -77,10 +79,11 @@
         nuxt
         >
         <v-img
-          :lazy-src="'monstera.jpg'"
-          max-height="150"
+          :lazy-src="'jalapeno.jpg'"
+          
           max-width="100%"
-          :src="'monstera.jpg'"
+          aspect-ratio="2"
+          :src="'jalapeno.jpg'"
         ></v-img>
         <v-card-title class="headline">
           3. Pflanze

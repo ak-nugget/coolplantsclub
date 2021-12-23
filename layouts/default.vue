@@ -16,6 +16,7 @@
               max-width="100"
               aspect-ratio="1.25"
               :src="'cpc_logo.svg'"
+              to="/dashboard"
             ></v-img>
           </v-list-item-content>
         </v-list-item>

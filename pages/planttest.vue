@@ -1,22 +1,29 @@
 <template>
   <v-row>
     <v-col
+      cols="12"
       sm="12"
       md="6"
       lg="6"
+      xl="6"
      >
-      <v-img
-        :lazy-src="'monstera.jpg'"
-        max-height="100%"
-        max-width="100%"
-        :src="'monstera.jpg'"
-        :alt="'monstera.jpg'"
-      ></v-img>
+      <v-carousel
+        hide-delimiters
+        height="auto">
+        <v-carousel-item
+          v-for="(item,i) in items"
+          :key="i"
+          :src="item.src"
+        ></v-carousel-item>
+      </v-carousel>
+      <v-spacer />
     </v-col>
-    <v-col 
+    <v-col
+      cols="12"
       sm="12"
       md="6"
       lg="6"
+      xl="4"
       >
       <h1 class="headline">
         Monstera 1
@@ -24,14 +31,14 @@
       <p class="subtitle">
         Monstera deliciosa (ugs. Fensterblatt)
       </p>
-    
+      <v-spacer />
       <!-- PFLEGE -->
-      <v-col 
+      <!-- <v-col 
         sm="12"
         md="12"
         lg="6"
         class="no-pad"
-        >
+        > -->
         <h2 class="smallhead">
           Pflege
         </h2>
@@ -65,15 +72,15 @@
             </v-list-item>
           </v-list-item-group>
         </v-list>
-      </v-col>
-      
+      <!-- </v-col> -->
+      <v-spacer />
       <!-- INFORMATIONEN -->
-      <v-col
+      <!-- <v-col
         sm="12"
         md="12"
         lg="6"
         class="no-pad"
-        >
+        > -->
         <h2 class="smallhead">
           Informationen
         </h2>
@@ -143,7 +150,8 @@
                   item-key="height"
                   hide-default-footer
                   
-                  :headers="[{ text: 'Größe', value: 'height' }, { text: 'Datum', value: 'date' }]"
+                  :headers="headers"
+                  :items="growth"
                   class="elevation-1">
                   <!-- <template v-slot:item.height="{ height }">
                     {{ height }} cm
@@ -154,7 +162,29 @@
           </v-expansion-panels>
         </template>
         <v-spacer />
-      </v-col>
+        <v-btn
+          tile
+          outlined
+          large
+          color="$dgreen"
+          
+          >
+          Pflanze bearbeiten
+        </v-btn>
+            
+        <v-spacer />
+          
+        <v-btn
+          tile
+          plain
+          
+          large
+          color="$dgreen"
+          >
+          Pflanze löschen
+        </v-btn>
+          
+      <!-- </v-col> -->
     </v-col>
   </v-row>
   
@@ -189,6 +219,48 @@
     // console.log(item)
   },
 } */
+
+
+  export default {
+    data () {
+      return {
+        items: [
+          {
+            src: 'monstera.jpg',
+          },
+          {
+            src: 'philo.jpg',
+          },
+          {
+            src: 'jalapeno.jpg',
+          },
+        ],
+        headers: [
+          {
+            text: 'Größe',
+            align: 'start',
+            sortable: false,
+            value: 'height',
+          },
+          {
+            text: 'Datum',
+            value: 'date',
+          }
+        ],
+        growth: [
+          {
+            height: '40 cm',
+            date: '01.06.2021',
+          },
+          {
+            height: '15 cm',
+            date: '31.02.2020'
+          }
+        ]
+      }
+    },
+  }
+
 </script>
 
 <style lang="scss" scoped>

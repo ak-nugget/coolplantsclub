@@ -173,17 +173,55 @@
         </v-btn>
             
         <v-spacer />
-          
-        <v-btn
-          tile
-          plain
-          
-          large
-          color="$dgreen"
+        <v-dialog
+          v-model="dialog"
+          max-width="300"
           >
-          Pflanze löschen
-        </v-btn>
-          
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              tile
+              plain
+              large
+              color="$dgreen"
+              v-bind="attrs"
+              v-on="on"
+              >
+              Pflanze löschen
+            </v-btn>
+          </template>
+          <v-card>
+            <v-card-title>
+              Bist du sicher, dass du diese Pflanze löschen möchtest?
+            </v-card-title>
+
+            <!-- <v-divider></v-divider> -->
+
+            <v-card-actions>
+              
+              <v-btn
+                tile
+                outlined
+                large
+                color="$dgreen"
+                text
+                @click="dialog = false"
+              >
+                Abbrechen
+              </v-btn>
+              <v-spacer />
+              <v-btn
+                tile
+                outlined
+                large
+                color="$dgreen"
+                text
+                @click="dialog = false"
+              >
+                Löschen
+              </v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
       <!-- </v-col> -->
     </v-col>
   </v-row>
@@ -260,6 +298,7 @@
       }
     },
   }
+  
 
 </script>
 

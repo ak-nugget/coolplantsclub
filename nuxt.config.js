@@ -57,7 +57,7 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: 'https://cpc.wsrn.dev/api',
+    baseURL: 'https://cpc.wsrn.dev/',
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
